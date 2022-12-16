@@ -15,14 +15,6 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        Category::create([
-            'name' => 'Web Programing',
-            'slug' => 'web-programing'
-        ]);
-
-        Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design'
-        ]);
+        //
     }
 }
