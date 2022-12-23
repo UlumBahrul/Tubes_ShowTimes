@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,17 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
+Route::get('/', function () {
+    return view('home', [
+        "title" => "Home"
+    ]);
+});
+
+// Route::get('/blog', [PostController::class, 'index']);
+Route::get('/blog', [PostController::class, 'index']);
+
+//halaman single posts
+Route::get('post/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/about', function () {
     return view('about', [

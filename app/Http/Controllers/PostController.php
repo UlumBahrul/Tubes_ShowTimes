@@ -15,9 +15,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('home', [
-            "title" => "Home",
-            "posts" => Post::all()
+        // return view('home', [
+        //     "title" => "Home",
+        //     "posts" => Post::all()
+        // ]);
+        return view('posts', [
+            'title' => 'Posts',
+            'posts' => Post::all()
         ]);
     }
 
@@ -50,7 +54,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('post', [
+            'title' => 'Single Posts',
+            'post' => $post
+        ]);
     }
 
     /**
