@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        //user
         User::create([
             'name' => 'Bahrul ulum',
             'username' => 'bahulum',
@@ -33,6 +34,8 @@ class DatabaseSeeder extends Seeder
 
         User::factory(4)->create();
 
+
+        //category
         Category::create([
             'name' => 'Web Programing',
             'slug' => 'web-programing'
@@ -43,6 +46,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'web-design'
         ]);
 
+
+        //posts
         Post::factory(10)->create();
     }
 }
