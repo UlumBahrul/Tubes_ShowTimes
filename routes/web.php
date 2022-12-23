@@ -36,6 +36,12 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/contact', function () {
+    return view('contact', [
+        "title" => "Contact"
+    ]);
+});
+
 // Route::get('/blog', [PostController::class, 'index']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
