@@ -34,7 +34,6 @@ class DatabaseSeeder extends Seeder
 
         User::factory(4)->create();
 
-
         //category
         Category::create([
             'name' => 'Web Programing',
