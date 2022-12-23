@@ -7,18 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $guarded = ['id'];
+  protected $guarded = ['id'];
 
-    //relationship
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
+  //relationship
+  public function category()
+  {
+    return $this->belongsTo(Category::class);
+  }
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+  public function user()
+  {
+    return $this->belongsTo(User::class);
+  }
 }
