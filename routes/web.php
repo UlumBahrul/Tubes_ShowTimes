@@ -50,6 +50,7 @@ Route::get('/contact', function () {
 
 //halaman category
 Route::get('/categories', function () {
+  
     return view('categories', [
         'title' => 'categories',
         'categories' => Category::all()
