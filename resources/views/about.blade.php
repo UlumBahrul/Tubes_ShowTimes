@@ -10,7 +10,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis labore rem distinctio laboriosam odit dolor possimus quam officia cupiditate!</p>
     </div>
 </div>
-<div class="row mt-4">
+
+<div class="row mt-4 mb-4">
     <h1 class="text-center mb-3">Our Team</h1>
     <div
         id="carouselExampleIndicators"
@@ -226,7 +227,7 @@
     </div>
 </div>
 
-<div class="row mt-5 justify-content-center">
+{{-- <div class="row mt-5 justify-content-center">
     <h1 class="text-center mb-4">Contact Us</h1>
     <div class="col-md-5 col-sm-12">
         <div class="card text-dark bg-light mb-3">
@@ -279,5 +280,5 @@
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
     </div>
-</div>
+</div> --}}
 @endsection
