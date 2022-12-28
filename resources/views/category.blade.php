@@ -1,15 +1,17 @@
 @extends('layouts.main')
 @section('container')
+  <h1 class="mb-5">Post Category : {{ $category }}</h1>
 
-  {{-- @foreach ($posts as $post)
+  @foreach ($posts as $post)
     <article class="mb-5">
-      <h2><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h2>
-      <h5>By. <a href="/authors/{{ $post }}">{{ $post->user->name }}</a> In <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></h5>
+      <h2><a href="/post/{{ $post->slug }}">{{ $post->title }}</a></h2>
+      <h5>By. Bahrul ulum In <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></h5>
+      {{-- <h5>By: {{ $post->author }}</h5> --}}
     </article>
-  @endforeach --}}
+  @endforeach
 
 {{-- body posts --}}
-<div class="container">
+{{-- <div class="container">
   <div class="row">
     @foreach ($posts->skip(1) as $post)
     <div class="col-md-4 mb-3">
@@ -23,11 +25,13 @@
         <div class="card-body">
           <h5 class="card-title">{{ $post->title }}</h5>
 
-          {{-- <p>
+          <p>
             <small class="text-muted">
               By. <a href="/posts?author={{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}</a>  {{ $post->created_at->diffForHumans() }}
             </small>
-          </p> --}}
+          </p>
+          
+          <p class="card-text">{{ $post->excerpt }}</p>
           
           <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read more</a>
         </div>
@@ -35,5 +39,5 @@
     </div>
     @endforeach
   </div>
-</div>
+</div> --}}
 @endsection
