@@ -20,7 +20,7 @@ class PostController extends Controller
         //     "posts" => Post::all()
         // ]);
         return view('posts', [
-            'title' => 'Posts',
+            'title' => 'Galery',
             // 'posts' => Post::all(),
             'posts' => Post::latest()->get()
         ]);
@@ -56,7 +56,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('post', [
-            'title' => 'Single Posts',
+            'title' => 'Single Galery',
             'post' => $post
         ]);
     }
