@@ -8,6 +8,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\DashboardController;
+use App\Models\Category;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,17 +32,42 @@ Route::get('/', function () {
 Route::get('/blog', [PostController::class, 'index']);
 
 //halaman single posts
-Route::get('post/{post:slug}', [PostController::class, 'show']);
+Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
+//halaman about
 Route::get('/about', function () {
     return view('about', [
         "title" => "About"
     ]);
 });
 
+//haaman contact
 Route::get('/contact', function () {
     return view('contact', [
         "title" => "Contact"
+    ]);
+});
+
+//halaman category
+Route::get('/categories', function () {
+    return view('categories', [
+        'title' => 'categories',
+        'categories' => Category::all()
+    ]);
+});
+Route::get('/categories/{category:slug}', function (Category $category) {
+    return view('category', [
+        'title' => $category->name,
+        'posts' => $category->posts,
+        'category' => $category->name
+    ]);
+});
+
+//author
+Route::get('/authors/{author}', function (User $user) {
+    return view('posts', [
+        'title' => 'User Post',
+        'posts' => $user->posts,
     ]);
 });
 

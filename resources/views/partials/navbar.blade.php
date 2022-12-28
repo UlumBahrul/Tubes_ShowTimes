@@ -12,13 +12,13 @@
             <a class="nav-link {{ ($title === "About")?'active': ''}}" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "Category")?'active': ''}}" href="#">Category</a>
+            <a class="nav-link {{ ($title === "Category")?'active': ''}}" href="/categories">Category</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ ($title === "Contact")?'active': ''}}" href="/contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "Contact")?'active': ''}}" href="/blog">Post</a>
+            <a class="nav-link {{ ($title === "Post")?'active': ''}}" href="/blog">Post</a>
           </li>
         </ul>
         
