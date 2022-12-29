@@ -29,7 +29,7 @@
             </small>
           </p> --}}
           
-          <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read more</a>
+          <a href="/posts/{{ $post->slug }}" class="btn btn-primary">See more</a>
         </div>
       </div>
     </div>
