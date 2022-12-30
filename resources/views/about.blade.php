@@ -6,8 +6,9 @@
     </div>
     <div class="col-md-5">
         <h1 class="mt-3 text-center">About Us</h1>
-        <h1>Selamat Datang di SHOWTIME!!!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis labore rem distinctio laboriosam odit dolor possimus quam officia cupiditate!</p>
+        <h3>Hi, Welcome to gallery SHOWTIME!</h3>
+        <p class="banner_text">
+          This gallery is a place that serves to present and exhibit works of art to be communicated to the wider community. </p>
     </div>
 </div>
 
@@ -151,7 +152,7 @@
                 alt="..."
             />
             <div class="card-body">
-                <h5 class="card-title">Muhammad Rafliansyah</h5>
+                <h5 class="card-title">Muhamad Rafliansyah</h5>
                 <p class="card-text">203040105</p>
                 <ul class="nav justify-content-end">
                     <li class="ms-3">

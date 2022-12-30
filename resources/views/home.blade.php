@@ -5,9 +5,10 @@
   <div class="header_left">
       <div class="banner_main">
           <h1 class="banner_taital">IT'S SHOW TIME</h1>
-          <p class="banner_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+          <p class="banner_text">Hi, Welcome to gallery
+            This gallery is a place that serves to present and exhibit works of art to be communicated to the wider community. </p>
           <div class="btn_main">
-              <div class="more_bt"><a href="/blog">See More </a></div>
+              <div class="more_bt"><a href="/blog" class="btn btn-dark text-light">See More </a></div>
           </div>
       </div>
   </div>
