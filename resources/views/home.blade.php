@@ -8,13 +8,12 @@
           <p class="banner_text">Hi, Welcome to gallery
             This gallery is a place that serves to present and exhibit works of art to be communicated to the wider community. </p>
           <div class="btn_main">
-              <div class="more_bt"><a href="/blog">See More </a></div>
+              <div class="more_bt"><a href="/blog" class="btn btn-dark text-light">See More </a></div>
           </div>
       </div>
   </div>
   <div class="header_right">
       <img src="/img/logo.png" class="banner_img">
-      <link rel="icon" href="img/icon.ico"/>
   </div>
 </div>
 

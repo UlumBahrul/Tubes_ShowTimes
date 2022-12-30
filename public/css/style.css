@@ -44,6 +44,8 @@ body {
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden !important;
+     background-image: url('../img/bg1.jpg');
+     background-size: cover;
 }
 
 a {
