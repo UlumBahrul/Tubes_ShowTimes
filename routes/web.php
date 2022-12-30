@@ -34,6 +34,7 @@ Route::get('/blog', [PostController::class, 'index']);
 //halaman single posts
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
+
 //halaman about
 Route::get('/about', function () {
     return view('about', [
@@ -50,7 +51,7 @@ Route::get('/contact', function () {
 
 //halaman category
 Route::get('/categories', function () {
-  
+
     return view('categories', [
         'title' => 'categories',
         'categories' => Category::all()
@@ -85,8 +86,8 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->middleware('auth');
 
+Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');
-
 
 
 Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
