@@ -29,8 +29,10 @@
         </div>
       </a>
       @else
+      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
         <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }} " class="card-img-top" alt="{{ $posts[0]->category->name }}">
-      @endif
+      </a>
+        @endif
       
       {{-- <div class="card-body text-center"> --}}
 
@@ -57,8 +59,10 @@
             </div>
           </a>
           @else
+          <a href="/posts/{{ $post->slug }}">
             <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}" class="card-img-top" alt="{{ $post->category->name }}">
-          @endif
+          </a>
+            @endif
           {{-- <div class="card-body"> --}}
 
             {{-- <p>
