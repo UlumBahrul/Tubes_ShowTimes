@@ -36,13 +36,13 @@ class DatabaseSeeder extends Seeder
 
         //category
         Category::create([
-            'name' => 'Web Programing',
-            'slug' => 'web-programing'
+            'name' => 'Nature',
+            'slug' => 'nature'
         ]);
 
         Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design'
+            'name' => 'Animal',
+            'slug' => 'animal'
         ]);
 
 

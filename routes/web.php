@@ -73,8 +73,6 @@ Route::get('/authors/{author}', function (User $user) {
     ]);
 });
 
-// Route::get('/blog', [PostController::class, 'index']);
-
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
