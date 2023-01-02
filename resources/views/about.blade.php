@@ -66,84 +66,29 @@
     <div class="col-md-3 col-sm-10">
         <div class="card">
             <img
-                src="img/gambar1.jpg"
+                src="img/nina.jpeg"
                 class="card-img-top"
                 alt="..."
             />
             <div class="card-body">
                 <h5 class="card-title">Nina Rosita</h5>
                 <p class="card-text">203040082</p>
-                <ul class="nav justify-content-end">
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://github.com/sofyanegil"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#github" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.instagram.com/sofyanegi/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.linkedin.com/in/sofyanegi/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                
             </div>
         </div>
     </div>
     <div class="col-md-3">
         <div class="card">
             <img
-                src="img/gambar2.jpg"
+                src="img/ulum.jpeg"
                 class="card-img-top"
                 alt="..."
             />
             <div class="card-body">
+                
                 <h5 class="card-title">Bahrul ulum</h5>
-                <p class="card-text">203040089</p>
-                <ul class="nav justify-content-end">
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://github.com/wildan090801"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#github" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://instagram.com/ndliw/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.linkedin.com/in/mwildhank/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <p class="card-text">203040089</p>   
+                
             </div>
         </div>
     </div>
@@ -157,33 +102,7 @@
             <div class="card-body">
                 <h5 class="card-title">Muhamad Rafliansyah</h5>
                 <p class="card-text">203040105</p>
-                <ul class="nav justify-content-end">
-                    <li class="ms-3">
-                        <a class="text-muted" href="https://github.com/Yanidann"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#github" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.instagram.com/yanidanurnabila/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.linkedin.com/in/ynnws/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+               
             </div>
         </div>
     </div>
@@ -197,35 +116,7 @@
             <div class="card-body">
                 <h5 class="card-title">Paiz Abdul Jabar</h5>
                 <p class="card-text">203040108</p>
-                <ul class="nav justify-content-end">
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://github.com/SilviFitriawati29"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#github" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.instagram.com/silviiifw/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="text-muted"
-                            href="https://www.linkedin.com/in/silvi-fitriawati-26a8bb203/"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+               
             </div>
         </div>
     </div>
