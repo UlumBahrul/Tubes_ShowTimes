@@ -7,7 +7,7 @@
   <div class="col">
     <a href="/posts?category={{ $category->slug  }}">
     
-        <div class="text-bg-dark p-3">
+        <div class=" card text-bg-dark p-3 mb-2">
             <h5>{{ $category->name }}</h5>
         </div>
     
