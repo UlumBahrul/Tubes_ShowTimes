@@ -2,7 +2,10 @@
 @section('container')
 <div class="row p-3">
     <div class="col-md-7 col-sm-12">
-        <img src="img/bg.jpg" alt="about" class="img-fluid" />
+        {{-- <img src="img/bg.jpg" alt="about" class="img-fluid" /> --}}
+        <div class="header_right">
+            <img src="/img/logo.png" class="banner_img">
+        </div>
     </div>
     <div class="col-md-5">
         <h1 class="mt-3 text-center">About Us</h1>
@@ -187,7 +190,7 @@
     <div class="col-md-3">
         <div class="card">
             <img
-                src="img/gambar4.jpg"
+                src="img/paiz.png"
                 class="card-img-top"
                 alt="..."
             />
