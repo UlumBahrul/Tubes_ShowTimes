@@ -85,7 +85,7 @@ h6 {
      padding: 0 0 10px 0;
      font-weight: normal;
      line-height: normal;
-     color: #111111;
+     color: #fffcfc;
      margin: 0
 }
 
@@ -127,7 +127,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #212121;
+     color: #ffffff;
      text-decoration: none!important;
      opacity: 1
 }
@@ -149,9 +149,14 @@ p {
      line-height: 24px;
 }
 
+small{
+    color: white;
+}
+
 a {
      text-decoration: none;
      outline: none !important;
+     color: #ffffff;
 }
 
 a,
