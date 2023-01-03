@@ -47,7 +47,7 @@
     <div class="col-md-3 col-sm-10">
         <div class="card bg-dark text-white text-center">
             <img
-                src="img/gambar3.jpg"
+                src="img/rafli.jpeg"
                 class="card-img-top" style="max-height: 500px; overflow: hidden;"
             />
             <div class="card-body">
@@ -60,7 +60,7 @@
     <div class="col-md-3 col-sm-10">
         <div class="card bg-dark text-white text-center">
             <img
-                src="img/paiz.png"
+                src="img/faiz.jpeg"
                 class="card-img-top" style="max-height: 500px; overflow: hidden;"
             />
             <div class="card-body">
