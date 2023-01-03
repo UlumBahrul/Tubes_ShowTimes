@@ -17,7 +17,7 @@
 
 <div class="row mt-4 mb-4">
     <h1 class="text-center mb-3">Our Team</h1>
-    <div class="col-md-3 col-sm-10">
+    <div class="col-md-3 col-sm-10 mb-3">
         <div class="card bg-dark text-white text-center">
             <img
                 src="img/nina.jpeg"
@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-10">
+    <div class="col-md-3 col-sm-10 mb-3">
         <div class="card bg-dark text-white text-center">
             <img
                 src="img/ulum.jpeg"
@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-10">
+    <div class="col-md-3 col-sm-10 mb-3">
         <div class="card bg-dark text-white text-center">
             <img
                 src="img/rafli.jpeg"
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-10">
+    <div class="col-md-3 col-sm-10 ">
         <div class="card bg-dark text-white text-center">
             <img
                 src="img/faiz.jpeg"
