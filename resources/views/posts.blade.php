@@ -25,7 +25,9 @@
   @if ($posts->count())
     <div class="card mb-3">
       <a href="/posts?author={{ $posts[0]->author->username }}" class=" text-white text-decoration-none">
-        <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> By. {{ $posts[0]->author->name }}</div>
+        <small>
+          <div class="position-absolute px-2 py-1" style="background-color: rgba(0,0,0,0.5)"> By. {{ $posts[0]->author->name }}</div>
+        </small>
       </a>
       @if ($posts[0]->image)
       <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
@@ -47,8 +49,10 @@
       <div class="col-md-4 mb-3">
         <div class="card" >
           <a href="/posts?author={{ $post->author->username }}" class=" text-white text-decoration-none">
-            <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> By. {{ $post->author->name }}</div>
-          </a>
+            <small>
+              <div class="position-absolute px-2 py-1" style="background-color: rgba(0,0,0,0.5)"> By. {{ $post->author->name }}</div>
+            </small>
+            </a>
           @if ($post->image)
           <a href="/posts/{{ $post->slug }}">
             <div style="max-height: 325px; overflow:hidden;">
