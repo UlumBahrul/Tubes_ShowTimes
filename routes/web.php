@@ -24,12 +24,13 @@ use App\Models\User;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home"
+        "title" => "Home",
+        "active" => 'home'
     ]);
 });
 
 // Route::get('/blog', [PostController::class, 'index']);
-Route::get('/blog', [PostController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
 
 //halaman single posts
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
@@ -38,48 +39,38 @@ Route::get('posts/{post:slug}', [PostController::class, 'show']);
 //halaman about
 Route::get('/about', function () {
     return view('about', [
-        "title" => "About"
+        "title" => "About",
+        "active" => 'about'
     ]);
 });
 
 //haaman contact
 Route::get('/contact', function () {
     return view('contact', [
-        "title" => "Contact"
+        "title" => "Contact",
+        "active" => 'contact'
     ]);
 });
 
 //halaman category
 Route::get('/categories', function () {
-
     return view('categories', [
         'title' => 'categories',
+        'active' => 'categories',
         'categories' => Category::all()
     ]);
 });
-Route::get('/categories/{category:slug}', function (Category $category) {
-    return view('category', [
-        'title' => $category->name,
-        'posts' => $category->posts,
-        'category' => $category->name
-    ]);
-});
 
-//author
-Route::get('/authors/{author}', function (User $user) {
-    return view('posts', [
-        'title' => 'User Post',
-        'posts' => $user->posts,
-    ]);
-});
-
+//login
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
+//registrasi
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
+//dashboard
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->middleware('auth');
