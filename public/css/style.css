@@ -128,7 +128,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #212121;
+     color: #ffffff;
      text-decoration: none!important;
      opacity: 1
 }
@@ -151,9 +151,14 @@ p {
      color: #070707
 }
 
+small{
+    color: white;
+}
+
 a {
      text-decoration: none;
      outline: none !important;
+     color: #ffffff;
 }
 
 a,

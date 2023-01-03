@@ -16,11 +16,27 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id');
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('image')->nullable();
             $table->timestamp('published_at')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('comments', function (Blueprint $table) {
+            $table->id();
+            $table->text('body');
+            $table->foreignId('comment_id')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('post_id')->constrained('posts')->onDelete('cascade')->onUpdate('cascade');
+            $table->timestamps();
+        });
+
+        Schema::create('likes', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('comment_id')->constrained('comments')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
@@ -32,6 +48,8 @@ return new class extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('likes');
+        Schema::dropIfExists('comments');
         Schema::dropIfExists('posts');
     }
 };
