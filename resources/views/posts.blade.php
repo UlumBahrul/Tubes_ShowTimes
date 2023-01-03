@@ -24,7 +24,9 @@
   {{-- hero posts --}}
   @if ($posts->count())
     <div class="card mb-3">
-      <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> <a href="/posts?author={{ $posts[0]->author->username }}" class=" text-white text-decoration-none">By. {{ $posts[0]->author->name }}</a></div>
+      <a href="/posts?author={{ $posts[0]->author->username }}" class=" text-white text-decoration-none">
+        <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> By. {{ $posts[0]->author->name }}</div>
+      </a>
       @if ($posts[0]->image)
       <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
         <div style="max-height: 400px; overflow: hidden;">
@@ -44,7 +46,9 @@
       @foreach ($posts->skip(1) as $post)
       <div class="col-md-4 mb-3">
         <div class="card" >
-          <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> <a href="/posts?author={{ $post->author->username }}" class=" text-white text-decoration-none">By. {{ $post->author->name }}</a></div>
+          <a href="/posts?author={{ $post->author->username }}" class=" text-white text-decoration-none">
+            <div class="position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.5)"> By. {{ $post->author->name }}</div>
+          </a>
           @if ($post->image)
           <a href="/posts/{{ $post->slug }}">
             <div style="max-height: 325px; overflow:hidden;">
