@@ -8,7 +8,7 @@
           <p class="banner_text">Hi, Welcome to gallery
             This gallery is a place that serves to present and exhibit works of art to be communicated to the wider community. </p>
           <div class="btn_main">
-              <div class="more_bt"><a href="/blog" class="btn btn-white text-light">See More </a></div>
+              <div class="more_bt"><a href="/posts" class="btn btn-white text-light">See More </a></div>
           </div>
       </div>
   </div>
