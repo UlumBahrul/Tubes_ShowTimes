@@ -1,4 +1,18 @@
 @extends('layouts.main')
+
+@push('css')
+      @livewireStyles
+@endpush
+@push('js')
+      @livewireScripts
+      <script>
+        Livewire.on('comment_store', commentId => {
+          var helloScroll = document.getElementById('comment-'+ commentId);
+          helloScroll.scrollIntoView({behavior: 'smooth'},true);
+        })
+      </script>
+@endpush
+
 @section('container')
   
   <article>
@@ -8,4 +22,10 @@
   </article>
 
   <a href="/blog">Back to Posts</a>
+
+  <!-- Comments Form-->
+  <div>
+    @livewire('posts.comment', ['id' => $post->id])
+  </div>
+
 @endsection
