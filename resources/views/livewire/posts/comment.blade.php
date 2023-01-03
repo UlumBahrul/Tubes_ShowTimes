@@ -1,17 +1,20 @@
 <div>
-        <h3 class="mb-4">({{ $total_comments }}) Comments</h3>
         @auth
-        <form wire:submit.prevent="store" class="mb-4">
-            <div class="mb-3">
-                <textarea wire:model.defer="body" rows="2" class="form-control @error('body') is-invalid @enderror" placeholder="Tulis Komentar.."></textarea>
-                @error('body')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
+        <div class="card my-4">
+            <h5 class="card-header mb-3">Leave a Comment</h5>
+            <h3 class="mb-3 text-secondary">({{ $total_comments }}) Comments</h3>
+            <div class="card-body">
+            <form wire:submit.prevent="store" class="mb-3">
+                <div class="mb-3">
+                    <textarea wire:model.defer="body" rows="2" class="form-control @error('body') is-invalid @enderror" placeholder="Tulis Komentar.."></textarea>
+                    @error('body')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             </div>
-            <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+        </div>
         @endauth
         @guest
             <div class="alert alert-primary" role="alert">
@@ -115,7 +118,7 @@
             </div>
             </div>
             @if (isset($comment_id) && $comment_id == $item2->id)
-            <form wire:submit.prevent="reply" class="my-3 ms-4">
+            <form wire:submit.prevent="reply" class="my-3 ms-4 col-lg-3">
                 <div class="mb-3">
                     <textarea wire:model.defer="body2" rows="2" class="form-control @error('body2') is-invalid @enderror" placeholder="Tulis Komentar.."></textarea>
                     @error('body2')
@@ -129,7 +132,7 @@
             @endif
             
             @if (isset($edit_comment_id) && $edit_comment_id == $item2->id)
-            <form wire:submit.prevent="change" class="my-3 ms-4">
+            <form wire:submit.prevent="change" class="my-3 ms-4 col-lg-3">
                 <div class="mb-3">
                     <textarea wire:model.defer="body2" rows="2" class="form-control @error('body2') is-invalid @enderror" placeholder="Tulis Komentar.."></textarea>
                     @error('body2')
