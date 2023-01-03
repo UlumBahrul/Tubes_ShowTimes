@@ -17,52 +17,7 @@
 
 <div class="row mt-4 mb-4">
     <h1 class="text-center mb-3">Our Team</h1>
-    <div
-        id="carouselExampleIndicators"
-        class="carousel slide mb-4"
-        data-bs-ride="carousel"
-    >
-        <div class="carousel-indicators">
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-            ></button>
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-            ></button>
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-            ></button>
-        </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    
     <div class="col-md-3 col-sm-10">
         <div class="card">
             <img
@@ -95,7 +50,7 @@
     <div class="col-md-3">
         <div class="card">
             <img
-                src="img/gambar3.jpg"
+                src="img/rafli.jpeg"
                 class="card-img-top"
                 alt="..."
             />
@@ -109,7 +64,7 @@
     <div class="col-md-3">
         <div class="card">
             <img
-                src="img/paiz.png"
+                src="img/faiz.jpeg"
                 class="card-img-top"
                 alt="..."
             />
