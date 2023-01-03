@@ -1,15 +1,12 @@
 <?php
 
-
-use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\AdminCategoryController;
-use App\Models\Category;
-use App\Models\User;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +26,7 @@ Route::get('/', function () {
     ]);
 });
 
-// Route::get('/blog', [PostController::class, 'index']);
+//Halaman posts galery
 Route::get('/posts', [PostController::class, 'index']);
 
 //halaman single posts
@@ -44,22 +41,8 @@ Route::get('/about', function () {
     ]);
 });
 
-//haaman contact
-Route::get('/contact', function () {
-    return view('contact', [
-        "title" => "Contact",
-        "active" => 'contact'
-    ]);
-});
-
 //halaman category
-Route::get('/categories', function () {
-    return view('categories', [
-        'title' => 'categories',
-        'active' => 'categories',
-        'categories' => Category::all()
-    ]);
-});
+Route::get('/categories', [CategoryController::class, 'index']);
 
 //login
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

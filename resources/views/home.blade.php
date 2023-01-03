@@ -16,14 +16,4 @@
       <img src="/img/logo.png" class="banner_img ">
   </div>
 </div>
-
-{{-- body post --}}
-{{-- <div class="body ">
-  @foreach ($posts as $post)
-  <article>
-    <h2>{{ $post->title }}</h2>
-  </article>
-  @endforeach
-</div> --}}
-
 @endsection
