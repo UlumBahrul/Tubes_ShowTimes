@@ -17,8 +17,8 @@
         </div>
         @endauth
         @guest
-            <div class="alert alert-primary" role="alert">
-                Login dulu untuk berkomentar <a href="{{ route('login') }}">klik disini</a>
+            <div class="alert alert-dark" role="alert">
+                Login dulu untuk berkomentar <a class="comment" href="{{ route('login') }}">klik disini</a>
             </div>
         @endguest
         @foreach ($comments as $item)
@@ -26,11 +26,11 @@
         <div class="d-flex align-items-lg-start mb-3">
         <img src="https://www.gravatar.com/avatar/1a2dc59abe16bd6f16165b76ffc69a50?d=mm&s=100" class="img-fluid rounded-circle me-2" width="40" alt="user_comment">
         <div>
-            <div>
+            <div class="text-white">
                 <span>{{ $item->user->name }}</span>
                 <span>{{ $item->created_at }}</span>
             </div>
-            <div class="text-secondary mb-2">
+            <div class="text-white mb-2">
                 {{ $item->body }}
             </div>
             <div>
